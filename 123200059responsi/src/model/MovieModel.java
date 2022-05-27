@@ -89,7 +89,7 @@ public class MovieModel {
             
             else{
                 
-                String query = "UPDATE movie SET plot='" + plot + "',character='" + character + "',acting = '" + acting + "',score='"+ score+"' WHERE title= '" + title + "'" ;  
+                String query = "UPDATE movie SET `plot`='" + plot + "',`character`='" + character + "',`acting` = '" + acting + "',`score`='"+ score+"' WHERE `title`= '" + title + "'" ;  
                 stmt.executeUpdate(query);
                 JOptionPane.showMessageDialog(null, "Update Success");
             }
